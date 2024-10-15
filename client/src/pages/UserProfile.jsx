@@ -45,10 +45,10 @@ const UserProfile = () => {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         }
       );
-      setUser(response.data);
+      // setUserInfo(response.data);
       setUpdateMessage("Profile updated successfully!");
       setEdit(false)
-    } catch (err) {
+    } catch (err) {      
       setError(err.response?.data?.error || "Failed to update profile");
     }
   };

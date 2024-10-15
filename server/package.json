@@ -9,7 +9,8 @@
     "migrate": "npx prisma migrate dev",
     "dev": "nodemon server.js",
     "seed": "node prisma/seed.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "studio": "npx prisma studio"
   },
   "keywords": [],
   "author": "",
